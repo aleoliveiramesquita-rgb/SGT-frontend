@@ -1,0 +1,162 @@
+:root {
+  --cor-primaria: #4f46e5;
+  --cor-primaria-escura: #3730a3;
+  --cor-fundo: #f5f7fb;
+  --cor-superficie: #ffffff;
+  --cor-texto: #1f2937;
+  --cor-texto-suave: #6b7280;
+  --cor-borda: #d1d5db;
+  --cor-sucesso: #16a34a;
+  --cor-alerta: #dc2626;
+  --sombra: 0 10px 25px rgba(0, 0, 0, 0.08);
+  --raio: 16px;
+  --espaco: 1rem;
+  --largura-max: 1100px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--cor-fundo);
+  color: var(--cor-texto);
+  line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: var(--cor-primaria);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+:focus-visible {
+  outline: 3px solid #111827;
+  outline-offset: 2px;
+}
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+}
+
+.skip-link:focus {
+  left: 1rem;
+  top: 1rem;
+  background: #111827;
+  color: #fff;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  z-index: 1000;
+}
+
+.container {
+  width: min(100% - 2rem, var(--largura-max));
+  margin: 0 auto;
+}
+
+.topo,
+.rodape {
+  background: var(--cor-superficie);
+  padding: 1rem 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.logo {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.auth-page {
+  min-height: calc(100vh - 160px);
+  display: grid;
+  place-items: center;
+  padding: 2rem 0;
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 420px;
+  background: var(--cor-superficie);
+  padding: 2rem;
+  border-radius: var(--raio);
+  box-shadow: var(--sombra);
+}
+
+.auth-card h1 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.subtexto {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  color: var(--cor-texto-suave);
+}
+
+.formulario {
+  display: grid;
+  gap: 1rem;
+}
+
+.campo {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.campo label {
+  font-weight: 600;
+}
+
+.campo input,
+.campo textarea,
+.campo select {
+  width: 100%;
+  padding: 0.85rem 1rem;
+  border: 1px solid var(--cor-borda);
+  border-radius: 10px;
+  font-size: 1rem;
+}
+
+.botao {
+  border: none;
+  background: var(--cor-primaria);
+  color: white;
+  padding: 0.95rem 1rem;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.botao:hover {
+  background: var(--cor-primaria-escura);
+}
+
+.link-texto {
+  text-align: center;
+  font-size: 0.95rem;
+  color: var(--cor-texto-suave);
+}
+
+@media (min-width: 768px) {
+  .auth-card {
+    padding: 2.5rem;
+  }
+}
