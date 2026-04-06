@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dashboard |  Sistema Gerenciador de Tarefas</title>
+  <link rel="stylesheet" href="./css/estilos.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo-principal">Pular para o conteúdo</a>
+
+  <header class="topo">
+    <div class="container barra-topo">
+      <p class="logo">Sistema Gerenciador de Tarefas</p>
+      <nav aria-label="Principal">
+        <a href="dashboard.html">Tarefas</a>
+        <a href="../index.html">Sair</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo-principal" class="container pagina-dashboard">
+    <section class="cabecalho-pagina">
+      <div>
+        <h1>Minhas tarefas</h1>
+        <p class="subtexto">Acompanhe, crie e edite suas atividades.</p>
+      </div>
+      <a class="botao" href="criar-tarefa.html">+ Nova tarefa</a>
+    </section>
+
+    <section class="lista-tarefas">
+      <article class="card-tarefa">
+        <h2>Estudar HTML semântico</h2>
+        <p>Revisar header, main, section, article e footer.</p>
+        <span class="status pendente">Pendente</span>
+        <div class="acoes-card">
+          <a href="tarefa-detalhes.html">Ver detalhes</a>
+          <a href="editar-tarefa.html">Editar</a>
+        </div>
+      </article>
+
+      <article class="card-tarefa">
+        <h2>Finalizar documentação</h2>
+        <p>Preencher o template técnico e gerar PDF.</p>
+        <span class="status concluida">Concluída</span>
+        <div class="acoes-card">
+          <a href="tarefa-detalhes.html">Ver detalhes</a>
+          <a href="editar-tarefa.html">Editar</a>
+        </div>
+      </article>
+    </section>
+  </main>
+</body>
+</html>

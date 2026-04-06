@@ -159,4 +159,104 @@ a:hover {
   .auth-card {
     padding: 2.5rem;
   }
+}.barra-topo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.barra-topo nav {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.pagina-dashboard {
+  padding: 2rem 0;
+}
+
+.cabecalho-pagina {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.lista-tarefas {
+  display: grid;
+  gap: 1rem;
+}
+
+.card-tarefa {
+  background: var(--cor-superficie);
+  border-radius: var(--raio);
+  padding: 1.5rem;
+  box-shadow: var(--sombra);
+}
+
+.card-tarefa h2 {
+  margin-top: 0;
+  font-size: 1.2rem;
+}
+
+.status {
+  display: inline-block;
+  margin: 0.75rem 0 1rem;
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.pendente {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.concluida {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.acoes-card {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}.form-card {
+  max-width: 720px;
+  margin: 0 auto;
+  background: var(--cor-superficie);
+  padding: 2rem;
+  border-radius: var(--raio);
+  box-shadow: var(--sombra);
+}
+
+.acoes-formulario {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+.botao-secundario {
+  display: inline-block;
+  background: #e5e7eb;
+  color: var(--cor-texto);
+  padding: 0.95rem 1rem;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.botao-secundario:hover {
+  text-decoration: none;
+  background: #d1d5db;
+}.info-tarefa {
+  margin: 1.5rem 0;
+  display: grid;
+  gap: 0.5rem;
 }

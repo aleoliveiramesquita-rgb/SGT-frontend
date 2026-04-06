@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Criar Tarefa | Sistema Gerenciador de Tarefas</title>
+  <link rel="stylesheet" href="./css/estilos.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo-principal">Pular para o conteúdo</a>
+
+  <header class="topo">
+    <div class="container barra-topo">
+      <p class="logo">Sistema Gerenciador de Tarefas</p>
+      <nav aria-label="Principal">
+        <a href="pagedasboardtarefas.html">Tarefas</a>
+        <a href="../index.html">Sair</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo-principal" class="container pagina-dashboard">
+    <section class="form-card">
+      <h1>Criar tarefa</h1>
+      <p class="subtexto">Preencha os campos abaixo para cadastrar uma nova tarefa.</p>
+
+      <form action="#" method="post" class="formulario">
+        <div class="campo">
+          <label for="titulo">Título da tarefa</label>
+          <input
+            id="titulo"
+            name="titulo"
+            type="text"
+            placeholder="Ex: Estudar CSS Grid"
+            required
+          >
+        </div>
+
+        <div class="campo">
+          <label for="descricao">Descrição</label>
+          <textarea
+            id="descricao"
+            name="descricao"
+            rows="5"
+            placeholder="Descreva os detalhes da tarefa"
+            required
+          ></textarea>
+        </div>
+
+        <div class="campo">
+          <label for="status">Status</label>
+          <select id="status" name="status">
+            <option value="pendente">Pendente</option>
+            <option value="andamento">Em andamento</option>
+            <option value="concluida">Concluída</option>
+          </select>
+        </div>
+
+        <div class="campo">
+          <label for="prioridade">Prioridade</label>
+          <select id="prioridade" name="prioridade">
+            <option value="baixa">Baixa</option>
+            <option value="media">Média</option>
+            <option value="alta">Alta</option>
+          </select>
+        </div>
+
+        <div class="campo">
+          <label for="prazo">Prazo</label>
+          <input id="prazo" name="prazo" type="date">
+        </div>
+
+        <div class="acoes-formulario">
+          <a class="botao-secundario" href="pagedasboardtarefas.html">Cancelar</a>
+          <button type="submit" class="botao">Salvar tarefa</button>
+        </div>
+      </form>
+    </section>
+  </main>
+  </body>
+</html>

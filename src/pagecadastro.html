@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cadastro | Sistema Gerenciador de Tarefas</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo-principal">Pular para o conteúdo</a>
+
+  <header class="topo">
+    <div class="container">
+      <p class="logo">Sistema Gerenciador de Tarefas</p>
+    </div>
+  </header>
+  <main id="conteudo-principal" class="container auth-page">
+  <section class="auth-card">
+    <h1>Criar conta</h1>
+    <p class="subtexto">Cadastre-se para organizar suas tarefas do dia a dia.</p>
+
+    <form action="#" method="post" class="formulario">
+      <div class="campo">
+        <label for="nome">Nome completo</label>
+        <input id="nome" name="nome" type="text" placeholder="Digite seu nome" required>
+      </div>
+
+      <div class="campo">
+        <label for="email">E-mail</label>
+        <input id="email" name="email" type="email" placeholder="seuemail@exemplo.com" required>
+      </div>
+
+      <div class="campo">
+        <label for="senha">Senha</label>
+        <input id="senha" name="senha" type="password" placeholder="Crie uma senha" required>
+      </div>
+
+      <button type="submit" class="botao">Criar conta</button>
+
+      <p class="link-texto">
+        Já possui conta?
+        <a href="../index.html">Entrar</a>
+      </p>
+    </form>
+  </section>
+</main>
+<footer class="rodape">
+    <div class="container">
+      <p>© 2026 - Projeto Sistema Gerenciador de Tarefas. Curso Programador Web. </p>
+    </div>
+  </footer>
+</body>
+</html>
